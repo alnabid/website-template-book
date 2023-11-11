@@ -13,11 +13,17 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
+    width: 100vw;
+    
+}
+body > * {
+    overflow-x: hidden !important;
 }
 
 h1 {
     font-weight: 500;
     font-size: 3rem;
+    text-align: center;
 }
 
 a {
@@ -35,6 +41,11 @@ header {
     align-items: center;
     flex-wrap: wrap-reverse;
     border-bottom: var(--main-color) 2px solid;
+    padding: 2rem;
+}
+
+header h1 {
+    text-align: start;
 }
 
 header img {
@@ -67,6 +78,7 @@ header .header-links a:hover {
 header .header-links a:first-child {
     background-color: #ff7e5f;
 }
+
 
 /* video section */
 
@@ -171,7 +183,7 @@ iframe {
     border-radius: 1rem;
     word-spacing: 0.2rem;
     letter-spacing: 0.05rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .biography-section span {
@@ -222,4 +234,20 @@ footer a {
 }
 footer a:hover {
     opacity: 90%;
+}
+
+/* mobile compability */
+@media screen and (max-width: 977px) {
+    header {
+        text-align: center;
+    }
+    .header-links {
+        justify-content: center;
+    }
+    header h1 {
+        text-align: center;
+    }
+    .biography-section {
+        width: 95%;
+    }
 }
