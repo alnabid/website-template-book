@@ -13,12 +13,8 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    width: 100vw;
+    width: 100%;
 }
-body > * {
-    overflow-x: hidden !important;
-}
-
 h1 {
     font-weight: 500;
     font-size: 3rem;
@@ -41,6 +37,7 @@ header {
     flex-wrap: wrap-reverse;
     border-bottom: var(--main-color) 2px solid;
     padding: 2rem;
+    overflow-x: hidden !important;
 }
 
 header h1 {
@@ -219,6 +216,7 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     padding: 5rem 1rem;
+    width: 100%;
 }
 footer img {
     height: 10rem;
